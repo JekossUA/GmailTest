@@ -15,16 +15,15 @@ namespace GmailTest.Helpers
             if (mainPage.IsDisplayedChangeAccountLink())
             {
                 mainPage.ClickOnChangeAccountButton();
-                mainPage.IsVisibleEmailInput(waitTimeInSeconds);
             }
             else
             {
                 mainPage.IsVisibleEnterButton(waitTimeInSeconds);
                 mainPage.ClickEnterButton();
-                mainPage.IsVisibleEmailInput(waitTimeInSeconds);
                 
             }
-                        
+
+            mainPage.IsVisibleEmailInput(waitTimeInSeconds);
             EmailEnterPage emailEnterPage = new();
             emailEnterPage.ClickEmailInput();
             emailEnterPage.PasteEmailAdress(email);

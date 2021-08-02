@@ -2,7 +2,6 @@
 using GmailTest.Helpers;
 using GmailTest.UserFlow;
 using NUnit.Framework;
-using OpenQA.Selenium;
 using OpenQA.Selenium.Chrome;
 
 namespace GmailTest
@@ -18,7 +17,6 @@ namespace GmailTest
             ChromeOptions options = new ChromeOptions();
             options.AddArguments("--disable-notifications");
             Driver = new ChromeDriver(options);
-            //options.UnhandledPromptBehavior = UnhandledPromptBehavior.Dismiss;
             Driver.Navigate().GoToUrl(Variables.mainPageUrl);
             Driver.Manage().Window.Maximize();
 

@@ -7,8 +7,6 @@ namespace GmailTest.Helpers
     public class SendEmailFlow
     {
         private int waitTimeInSeconds = 15;
-        //private string expectedTextRu = "Письмо отправлено.";
-        //private string expectedTextEn = "";
 
         internal void SendEmail(string sendEmailTo, string emailTheme, string emailText)
         {

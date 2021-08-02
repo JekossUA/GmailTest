@@ -1,7 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
 using GmailTest.Helpers;
-using NUnit.Framework;
 using OpenQA.Selenium;
 
 namespace GmailTest.Pages
